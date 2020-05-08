@@ -1,4 +1,7 @@
 {
-    "person": "ben",
-    "status": "unmarried"
+  "person": "ben",
+  "aliases": ["digdug", "DigDug", "Mr. Yikes Man"],
+  "status": "unmarried",
+  "married": false,
+  "legally": "single"
 }
