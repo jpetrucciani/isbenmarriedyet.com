@@ -1,0 +1,14 @@
+{
+  "name": "isbenmarriedyet.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jpetrucciani/isbenmarriedyet.com.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron app.js"
+  },
+  "dependencies": {
+    "electron": "^8.3.0",
+    "menubar": "^8.0.2"
+  }
+}
