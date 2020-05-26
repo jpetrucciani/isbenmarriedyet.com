@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "electron app.js",
-    "build": "electron-builder"
+    "build": "electron-builder build --linux --windows --macos"
   },
   "dependencies": {
     "menubar": "^8.0.2"
