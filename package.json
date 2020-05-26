@@ -1,5 +1,6 @@
 {
   "name": "isbenmarriedyet.com",
+  "description": "A dank website",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/jpetrucciani/isbenmarriedyet.com.git",
