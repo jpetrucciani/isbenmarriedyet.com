@@ -5,7 +5,8 @@
   "repository": "https://github.com/jpetrucciani/isbenmarriedyet.com.git",
   "license": "MIT",
   "scripts": {
-    "start": "electron app.js"
+    "start": "electron app.js",
+    "build": "electron-builder"
   },
   "dependencies": {
     "menubar": "^8.0.2"
