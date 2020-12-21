@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Is Dig "Ben" Duggan married yet?</title>
+    <meta name="description" content='Is Dig "Ben" Duggan married yet?' />
+    <meta name="author" content="Colton and Jacobi Productions" />
+
+    <style>
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: #ccc;
+            }
+        }
+
+        .page {
+            display: grid;
+            height: 95vh;
+            width: 95vw;
+        }
+
+        .content {
+            display: grid;
+        }
+        .footer {
+            height: 5vh;
+            width: 100%;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            justify-self: center;
+            align-self: start;
+            max-width: 60vw;
+
+            display: grid;
+            grid-auto-flow: row;
+
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 50px 50px;
+            justify-items: center;
+        }
+
+        .gallery-frame {
+            padding: 8px;
+            text-align: center;
+            background-color: #333;
+            color: #d9d9d9;
+        }
+
+        img {
+            max-width: auto;
+            max-height: 300px;
+            object-fit: cover;
+            transition: opacity 0.25s ease-in-out;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+        <div class="gallery-grid">
+            <div class='gallery-frame'><img src="images/distracted-boyfriend-meme.jpg"/></div>
+            <div class='gallery-frame'><img src="images/happy.jpg"/></div>
+            <div class='gallery-frame'><img src="images/is-this-a-meme.png"/></div>
+            <div class='gallery-frame'><img src="images/keith-girlfriend-meme.png"/></div>
+            <div class='gallery-frame'><img src="images/ring.jpg"/></div>
+            <div class='gallery-frame'><img src="images/cat-meme.jpg"/></div>
+        </div>
+        <p class="footer">
+        © Colton and Jacobi Productions, All Rights Reserved, 2020
+        </p>
+    </div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then(function() {
+          console.log("Service Worker Registered");
+        });
+      }
+    </script>
+  </body>
+</html>

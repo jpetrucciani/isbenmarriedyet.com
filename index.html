@@ -24,6 +24,13 @@
       }
       .status {
         font-size: 256px;
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+      }
+      .secret {
+        font-size: 16px;
+        text-align: center;
       }
       .footer {
         font-size: 10px;
@@ -34,7 +41,10 @@
 
   <body>
     <div class="content">
-      <h1 class="status">No</h1>
+      <div>
+        <h1 class="status">No</h1>
+        <p class="secret">But he's <a href='gallery.html'>working on it!</a></p>
+      </div>
     </div>
     <p class="footer">
       © Colton and Jacobi Productions, All Rights Reserved, 2020
@@ -42,7 +52,7 @@
 
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js").then(function () {
+        navigator.serviceWorker.register("/sw.js").then(function() {
           console.log("Service Worker Registered");
         });
       }
