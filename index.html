@@ -52,9 +52,11 @@
 
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js").then(function() {
-          console.log("Service Worker Registered");
-        });
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for(let registration of registrations) {
+            registration.unregister()
+          } 
+        })
       }
     </script>
   </body>
