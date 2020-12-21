@@ -22,9 +22,6 @@
             width: 95vw;
         }
 
-        .content {
-            display: grid;
-        }
         .footer {
             height: 5vh;
             width: 100%;
@@ -40,13 +37,14 @@
             display: grid;
             grid-auto-flow: row;
 
-            align-items: center;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             grid-gap: 50px 50px;
             justify-items: center;
         }
 
         .gallery-frame {
+            display:grid;
+            height: auto;
             padding: 8px;
             text-align: center;
             background-color: #333;
@@ -54,10 +52,10 @@
         }
 
         img {
-            max-width: auto;
-            max-height: 300px;
-            object-fit: cover;
-            transition: opacity 0.25s ease-in-out;
+          align-self: center;
+          max-width: auto;
+          max-height: 300px;
+          object-fit: cover;
         }
     </style>
   </head>
@@ -65,12 +63,12 @@
   <body>
     <div class="page">
         <div class="gallery-grid">
-            <div class='gallery-frame'><img src="images/distracted-boyfriend-meme.jpg"/></div>
-            <div class='gallery-frame'><img src="images/happy.jpg"/></div>
-            <div class='gallery-frame'><img src="images/is-this-a-meme.png"/></div>
-            <div class='gallery-frame'><img src="images/keith-girlfriend-meme.png"/></div>
-            <div class='gallery-frame'><img src="images/ring.jpg"/></div>
-            <div class='gallery-frame'><img src="images/cat-meme.jpg"/></div>
+            <div class='gallery-frame'><img src="https://i.imgur.com/FqnMTY7.jpg"/></div>
+            <div class='gallery-frame'><img src="https://i.imgur.com/MUcovSI.jpg"/></div>
+            <div class='gallery-frame'><img src="https://i.imgur.com/HBEAGYp.png"/></div>
+            <div class='gallery-frame'><img src="https://i.imgur.com/qZj7hn2.png"/></div>
+            <div class='gallery-frame'><img src="https://i.imgur.com/RBQ2S4I.jpg"/></div>
+            <div class='gallery-frame'><img src="https://i.imgur.com/iW4vRqM.jpg"/></div>
         </div>
         <p class="footer">
         © Colton and Jacobi Productions, All Rights Reserved, 2020
