@@ -1,7 +1,14 @@
 {
   "person": "ben",
-  "aliases": ["digdug", "DigDug", "Mr. Yikes Man"],
-  "status": "engaged",
-  "married": false,
-  "legally": "single"
+
+  "aliases": [
+    "digdug",
+    "DigDug",
+    "Mr. Yikes Man",
+    "Mr. Marriage",
+    "Ben \"Dig \"Literally Married\" Dug\" Duggan"
+  ],
+  "status": "married",
+  "married": true,
+  "legally": "married"
 }
