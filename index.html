@@ -42,22 +42,12 @@
   <body>
     <div class="content">
       <div>
-        <h1 class="status">No</h1>
+        <h1 class="status">Yes</h1>
         <p class="secret">But he's <a href='https://www.theknot.com/BenEllie2021' target="_blank" rel="noopener noreferrer">working on it!</a></p>
       </div>
     </div>
     <p class="footer">
       © Colton and Jacobi Productions, All Rights Reserved, 2021
     </p>
-
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          for(let registration of registrations) {
-            registration.unregister()
-          } 
-        })
-      }
-    </script>
   </body>
 </html>
