@@ -9,12 +9,6 @@
     <meta name="author" content="Colton and Jacobi Productions" />
 
     <style>
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: black;
-          color: #ccc;
-        }
-      }
       .content {
         display: flex;
         align-items: center;
@@ -32,9 +26,23 @@
         font-size: 16px;
         text-align: center;
       }
+
+      .secret a {
+        color: black;
+      }
       .footer {
         font-size: 10px;
         text-align: center;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: black;
+          color: #ccc;
+        }
+
+        .secret a {
+          color: #ccc;
+        }
       }
     </style>
   </head>
@@ -43,7 +51,16 @@
     <div class="content">
       <div>
         <h1 class="status">Yes</h1>
-        <p class="secret"><a href='https://www.theknot.com/BenEllie2021' target="_blank" rel="noopener noreferrer">4/18/2021</a></p>
+        <p class="secret">
+          Video proof to be released
+          <a
+            href="https://www.theknot.com/BenEllie2021"
+            target="_blank"
+            rel="noopener noreferrer"
+            >here</a
+          >
+          on 5/1/2021.
+        </p>
       </div>
     </div>
     <p class="footer">
