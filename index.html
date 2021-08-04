@@ -52,19 +52,30 @@
       <div>
         <h1 class="status">Yes</h1>
         <p class="secret">
-          Video proof to be released
+          See
           <a
             href="https://www.theknot.com/BenEllie2021"
             target="_blank"
             rel="noopener noreferrer"
             >here</a
           >
-          on 5/1/2021.
+          for apparent proof.
         </p>
       </div>
     </div>
     <p class="footer">
       © Colton and Jacobi Productions, All Rights Reserved, 2021
     </p>
+    <script>
+      if (new Date().getDate() === 4 && new Date().getMonth() === 7) {
+        var elem = document.createElement("p");
+        elem.className = "secret";
+        elem.innerHTML = "Also Happy Birthday DigDug ya gosh darn nerd!";
+        document
+          .querySelector(".content")
+          .querySelector("div")
+          .appendChild(elem);
+      }
+    </script>
   </body>
 </html>
