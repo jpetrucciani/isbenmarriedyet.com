@@ -9,76 +9,74 @@
     <meta name="author" content="Colton and Jacobi Productions" />
 
     <style>
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: black;
-                color: #ccc;
-            }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: black;
+          color: #ccc;
         }
+      }
 
-        .page {
-            display: grid;
-            height: 95vh;
-            width: 95vw;
-        }
+      .page {
+        display: grid;
+        height: 95vh;
+        width: 95vw;
+      }
 
-        .footer {
-            height: 5vh;
-            width: 100%;
-            font-size: 15px;
-            text-align: center;
-        }
+      .footer {
+        height: 5vh;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+      }
 
-        .gallery-grid {
-            justify-self: center;
-            align-self: start;
-            max-width: 60vw;
+      .gallery-grid {
+        justify-self: center;
+        align-self: start;
+        max-width: 60vw;
 
-            display: grid;
-            grid-auto-flow: row;
+        display: grid;
+        grid-auto-flow: row;
 
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            grid-gap: 50px 50px;
-            justify-items: center;
-        }
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 50px 50px;
+        justify-items: center;
+      }
 
-        .gallery-frame {
-            display:grid;
-            height: auto;
-            padding: 8px;
-            text-align: center;
-            background-color: #333;
-            color: #d9d9d9;
-        }
+      .gallery-frame {
+        display: grid;
+        height: auto;
+        padding: 8px;
+        text-align: center;
+        background-color: #333;
+        color: #d9d9d9;
+      }
 
-        img {
-          align-self: center;
-          max-width: auto;
-          max-height: 300px;
-          object-fit: cover;
-        }
+      img {
+        align-self: center;
+        max-width: auto;
+        max-height: 300px;
+        object-fit: cover;
+      }
     </style>
   </head>
 
   <body>
     <div class="page">
-        <div class="gallery-grid">
-            <div class='gallery-frame'><img src="https://i.imgur.com/FqnMTY7.jpg"/></div>
-            <div class='gallery-frame'><img src="https://i.imgur.com/MUcovSI.jpg"/></div>
-            <div class='gallery-frame'><img src="https://i.imgur.com/HBEAGYp.png"/></div>
-            <div class='gallery-frame'><img src="https://i.imgur.com/qZj7hn2.png"/></div>
-            <div class='gallery-frame'><img src="https://i.imgur.com/RBQ2S4I.jpg"/></div>
-            <div class='gallery-frame'><img src="https://i.imgur.com/iW4vRqM.jpg"/></div>
-        </div>
-        <p class="footer">
-        © Colton and Jacobi Productions, All Rights Reserved, 2020
-        </p>
+      <div class="gallery-grid">
+        <div class="gallery-frame"><img src="https://i.imgur.com/FqnMTY7.jpg" /></div>
+        <div class="gallery-frame"><img src="https://i.imgur.com/MUcovSI.jpg" /></div>
+        <div class="gallery-frame"><img src="https://i.imgur.com/HBEAGYp.png" /></div>
+        <div class="gallery-frame"><img src="https://i.imgur.com/qZj7hn2.png" /></div>
+        <div class="gallery-frame"><img src="https://i.imgur.com/RBQ2S4I.jpg" /></div>
+        <div class="gallery-frame"><img src="https://i.imgur.com/iW4vRqM.jpg" /></div>
+      </div>
+      <p class="footer">© Colton and Jacobi Productions, All Rights Reserved, 2025</p>
     </div>
 
     <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js").then(function() {
-          console.log("Service Worker Registered");
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then(function () {
+          console.log('Service Worker Registered');
         });
       }
     </script>
